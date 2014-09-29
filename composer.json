@@ -1,0 +1,13 @@
+{
+    "require": {
+        "silex/silex": "~1.2",
+        "twig/twig": ">=1.8,<2.0-dev",
+        "symfony/twig-bridge": "2.5.*"
+    },
+    "autoload": {
+        "psr-0": {"Tipico": "src/"}
+    },
+    "require-dev": {
+        "raulfraile/ladybug": "~1.0"
+    }
+}
