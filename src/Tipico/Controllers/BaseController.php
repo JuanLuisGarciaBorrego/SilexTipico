@@ -21,9 +21,9 @@ abstract class BaseController implements ControllerProviderInterface{
 
     abstract protected function addRoutes(ControllerCollection $controller);
 
-    public function connect(Application $app)
+    public function connect(Application $container)
     {
-        $controllers = $app['controllers_factory'];
+        $controllers = $this->container['controllers_factory'];
 
         $this->addRoutes($controllers);
 
